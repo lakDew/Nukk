@@ -1,0 +1,371 @@
+
+.sec9{
+    padding: 150px 50px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fc;
+}
+
+.sec91{
+   color:grey;
+   font-size: 18px;
+   width: 440px;
+   margin-right: 130px;
+   margin-bottom: 50px;
+   position: relative;
+}
+
+.sec91 p:nth-child(1){
+    font-size: 40px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+
+.sec91 p:first-child::before{
+
+    content:"CLIENTS";
+    position: absolute;
+    font-size: 100px;
+    left: -30px;
+    top: -50px;
+     
+    color:gray;
+    opacity: 0.08;
+   
+}
+
+.sec91 p:nth-child(2)
+{
+    margin-bottom: 25px;
+}
+
+.sec91 span{
+  padding-bottom: 4px;
+}
+
+.sec91 span:hover{
+    border-bottom: 2px solid #e47312;
+  }
+
+  .sec92{
+    width:680px;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card9{
+    
+    background-color: white;
+    width: 47%;
+    box-sizing: border-box;
+    padding:70px 20px 40px 20px ;
+    margin: 0px 0px 70px 0px ;
+    position: relative;
+    
+  }
+ 
+
+  .card9:nth-child(2){
+
+   transform: translateY(40%);
+
+  }
+
+  .card9:nth-child(4){
+
+    transform: translateY(40%);
+ 
+   }
+
+   .card9::before{
+    content: "||";
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom,#e47312,salmon);
+    position: absolute;
+    color: white;
+    font-size: 23px;
+    font-weight:1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     top:-30px;
+     left:50%;
+     transform: translateX(-50%);
+   }
+  
+
+  
+
+  .card9 p:nth-child(1){
+    font-size: 18px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+
+  .card9 p:nth-child(2){
+    font-size: 18px;
+    margin-bottom: 13px;
+    text-align: center;
+    color: gray;
+  }
+
+  .card9 p:nth-child(3){
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+
+
+  @media only screen and (max-width: 991px){
+
+
+
+    .sec9{
+        padding: 150px 50px 80px 50px;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #f7f8fc;
+    }
+
+
+    .sec91{
+        color:grey;
+        font-size: 18px;
+        width:auto;
+        margin-right: 0px;
+        margin-bottom: 120px;
+        position: relative;
+     }
+
+     .sec91 p:nth-child(1){
+        font-size: 33px;
+        color: black;
+        margin-bottom: 45px;
+    }
+
+    .sec91 p:nth-child(2)
+{
+    margin-bottom: 45px;
+}
+
+.sec92{
+    width:100%;
+    
+    padding:0px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card9{
+    
+    background-color: white;
+    width: 48%;
+    box-sizing: border-box;
+    padding:70px 20px 40px 20px ;
+    margin: 0px 0px 70px 0px ;
+    position: relative;
+    
+  }
+
+  .card9:nth-child(2){
+
+    transform: translateY(20%);
+ 
+   }
+ 
+   .card9:nth-child(4){
+ 
+     transform: translateY(20%);
+  
+    }
+
+
+    .sec91 p:first-child::before{
+
+        content:"CLIENTS";
+        position: absolute;
+        font-size: 80px;
+        left: -30px;
+        top: -50px;
+         
+        color:gray;
+        opacity: 0.08;
+       
+    }
+  }
+
+
+
+  @media only screen and (max-width: 760px){
+
+    .sec9{
+        padding: 150px 50px 60px 50px;
+       
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #f7f8fc;
+    }
+
+    .card9{
+    
+        background-color: white;
+        width: 100%;
+        box-sizing: border-box;
+        padding:70px 20px 40px 20px ;
+        margin: 0px 0px 70px 0px ;
+        position: relative;
+        
+      }
+
+
+      .sec92{
+        width:100%;
+        
+        padding:0px 20px;
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+  }
+
+
+  @media only screen and (max-width: 550px){
+     
+    .sec91 p:first-child::before{
+        display: none;
+    }
+
+    .sec91 p:nth-child(1){
+        font-size: 33px;
+        color: black;
+        margin-bottom: 55px;
+    }
+
+    .sec91 p:nth-child(2)
+{
+    margin-bottom: 55px;
+}
+
+  }
+
+
+
+  @media only screen and (min-width: 1500px){
+
+
+    .sec9{
+      padding: 150px 100px;
+     
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #f7f8fc;
+  }
+
+  .sec91{
+    color:grey;
+    font-size: 18px;
+    width: 600px;
+    margin-right: 160px;
+    margin-bottom: 50px;
+    position: relative;
+    font-size: 22px;
+ }
+
+
+ .sec92{
+  width:960px;
+   
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sec91 p:nth-child(1){
+  font-size: 60px;
+  color: black;
+  margin-bottom: 45px;
+}
+
+
+.sec91 p:first-child::before{
+
+  content:"CLIENTS";
+  position: absolute;
+  font-size: 130px;
+  left: -30px;
+  top: -50px;
+   
+  color:gray;
+  opacity: 0.08;
+ 
+}
+
+.sec91 p:nth-child(2)
+{
+  margin-bottom: 45px;
+}
+
+.card9 p:nth-child(1){
+  font-size: 26px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card9 p:nth-child(2){
+  font-size: 26px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card9 p:nth-child(3){
+  font-size: 26px;
+  text-align: center;
+}
+
+.card9{
+    
+  background-color: white;
+  width: 47%;
+  box-sizing: border-box;
+  padding:100px 40px 60px 40px ;
+  margin: 0px 0px 70px 0px ;
+  position: relative;
+  
+}
+
+.card9::before{
+  content: "||";
+  height: 89px;
+  width: 89px;
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom,#e47312,salmon);
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  font-weight:1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   top:-30px;
+   left:50%;
+   transform: translateX(-50%);
+ }
+  }

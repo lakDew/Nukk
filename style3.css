@@ -1,0 +1,184 @@
+.sec7c{
+    width:1200px;
+     
+    padding:20px 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sec7{
+    display: flex;
+    justify-content: center;
+    color:gray;
+    padding: 80px 0px 60px 0px;
+    background-color: #f7f8fc;
+}
+
+.sec7c p:first-child{
+    font-size: 40px;
+    color:black;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.sec7 span:hover{
+   
+    border-bottom: 2px solid #e47312;
+    cursor: pointer;
+    
+}
+
+
+.sec7c p:first-child::before{
+    content:"TEAM";
+    position:absolute;
+    font-size: 100px;
+    left: -30px;
+    top: -50px;
+    color:gray;
+    opacity: 0.08;
+}
+
+#spec{
+    position: relative;
+}
+
+    #spec::before{
+    content:"SERVICES";
+    position:absolute;
+    font-size: 100px;
+    left: -30px;
+    top: -50px;
+    color:gray;
+    opacity: 0.08;
+}
+
+
+
+
+
+@media only screen and (max-width: 991px){
+
+    .sec7c p:first-child{
+        font-size: 33px;
+        color:black;
+        position: relative;
+    }
+
+    .sec7c p:first-child::before{
+        content:"TEAMS";
+        position:absolute;
+        font-size: 80px;
+        left: -30px;
+        top: -40px;
+        color:gray;
+        opacity: 0.08;
+    }
+
+    #spec::before{
+        content:"SERVICES";
+        position:absolute;
+        font-size: 80px;
+        left: -30px;
+        top: -40px;
+        color:gray;
+        opacity: 0.08;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .sec7c p:first-child::before{
+        display: none;
+        
+    }
+
+    #spec::before{
+        display: none;
+        
+    }
+
+    .sec7c{
+        flex-direction: column;
+        
+    }
+    .sec7{
+        padding-bottom: 80px;
+    }
+
+   .our p:nth-child(2){
+    margin-top: 20px;
+   }
+}
+
+
+
+@media only screen and (max-width: 760px){
+
+
+    .sec7c{width:1200px;
+       
+        padding:20 30px 20px 30px;
+       
+        
+    }
+}
+
+
+@media only screen and (min-width: 1500px){
+
+
+    .sec7c{
+        
+        width:100%;
+        font-size: 22px;
+       
+        padding:20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .sec7{
+        display: flex;
+        justify-content: center;
+        color:gray;
+        padding: 100px 0px 100px 0px;
+        background-color: #f7f8fc;
+    }
+    
+    .sec7c p:first-child{
+        font-size: 60px;
+        color:black;
+        position: relative;
+        margin-bottom:20px;
+    }
+    
+    .sec7 span:hover{
+       
+        border-bottom: 2px solid #e47312;
+        cursor: pointer;
+        
+    }
+    
+    
+    .sec7c p:first-child::before{
+        content:"TEAM";
+        position:absolute;
+        font-size: 130px;
+        left: -30px;
+        top: -50px;
+        color:gray;
+        opacity: 0.08;
+    }
+
+    #spec::before{
+        content:"SERVICES";
+        position:absolute;
+        font-size: 130px;
+        left: -30px;
+        top: -50px;
+        color:gray;
+        opacity: 0.08;
+    }
+    }

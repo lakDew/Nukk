@@ -1,0 +1,144 @@
+.sec10c{
+    width:1200px;
+    
+    padding:20px 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sec10{
+    display: flex;
+    justify-content: center;
+    color:gray;
+    padding: 80px 0px 60px 0px;
+    
+}
+
+.sec10c p:first-child{
+    font-size: 40px;
+    color:black;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.sec10 span:hover{
+   
+    border-bottom: 2px solid #e47312;
+    cursor: pointer;
+    
+}
+
+
+.sec10c p:first-child::before{
+    content:"BLOG";
+    position:absolute;
+    font-size: 100px;
+    left: -30px;
+    top: -50px;
+    color:gray;
+    opacity: 0.08;
+}
+
+
+
+@media only screen and (max-width: 991px){
+
+    .sec10c p:first-child{
+        font-size: 33px;
+        color:black;
+        position: relative;
+    }
+
+    .sec10c p:first-child::before{
+        content:"BLOG";
+        position:absolute;
+        font-size: 80px;
+        left: -30px;
+        top: -40px;
+        color:gray;
+        opacity: 0.08;
+    }
+}
+
+@media only screen and (max-width: 550px){
+
+    .sec10c p:first-child::before{
+        display: none;
+        
+    }
+
+    .sec10c{
+        flex-direction: column;
+        
+    }
+    .sec10{
+        padding-bottom: 60px;
+    }
+
+   
+}
+
+
+
+@media only screen and (max-width: 760px){
+
+
+    .sec10c{width:1200px;
+       
+        padding:20 30px 20px 30px;
+       
+        
+    }
+
+    
+}
+
+
+
+@media only screen and (min-width: 1500px){
+
+
+    .sec10c{
+        
+        width:100%;
+        font-size: 22px;
+       
+        padding:20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .sec10{
+        display: flex;
+        justify-content: center;
+        color:gray;
+        padding: 100px 0px 100px 0px;
+        
+    }
+    
+    .sec10c p:first-child{
+        font-size: 60px;
+        color:black;
+        position: relative;
+        margin-bottom:20px;
+    }
+    
+    .sec10 span:hover{
+       
+        border-bottom: 2px solid #e47312;
+        cursor: pointer;
+        
+    }
+    
+    
+    .sec10c p:first-child::before{
+        content:"BLOG";
+        position:absolute;
+        font-size: 130px;
+        left: -30px;
+        top: -50px;
+        color:gray;
+        opacity: 0.08;
+    }
+    }

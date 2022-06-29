@@ -1,0 +1,875 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    
+    padding:20px 30px;
+}
+.header  .nukk-logo{
+    background-color:#e47312 ;
+    height:110px;
+    width:160px;
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header .nukk-logo img{
+    height:22%;
+    width:52%;
+
+}
+
+
+.header .nav{
+    display:flex;
+    justify-content: space-between;
+    margin:30px 60px 0px 60px;
+   
+}
+
+.header .nav .nav-right{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    height:90px;
+    flex:1;
+    align-items: center;
+}
+
+.header .nav .nav-item ul{
+    list-style-type: none;
+    display:flex;
+  
+}
+
+
+ 
+    .header .nav .nav-right{
+        display: flex;
+        justify-content: flex-end;
+        background-color: white;
+        height:90px;
+        flex:1;
+        align-items: center;
+    }
+
+
+
+
+
+    
+
+.header .nav .quote{
+    height:90px;
+    width:160px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e47312;
+    font-size: 15px;
+    margin-left: 30px;
+    color:white;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+}
+
+.header .nav .nav-item ul li{
+    font-size: 15px;
+    margin:0px 10px;
+    position: relative;
+    cursor: pointer;
+    font-weight: 700;
+    
+
+}
+
+.header .nav .nav-item ul li::before{
+    content:"";
+    height:0px;
+    width:0px;
+    background-color: #e47312;
+    position: absolute;
+    top:-36px;
+    left:50%;
+     transition: .25s;
+
+}
+ .home{
+    color:#e47312;
+}
+
+.header .nav .nav-item ul li:hover::before{
+    height:200%;
+    width:1px;
+}
+
+.header .nav .nav-item ul li::after{
+    content:"";
+    height:0px;
+    width:0px;
+    background-color: #e47312;
+    position: absolute;
+    bottom:-36px;
+    left:50%;
+     transition: .25s;
+
+}
+
+.header .nav .nav-item ul li:hover::after{
+    height:200%;
+    width:1px;
+}
+
+.header .nav .nav-item ul li:hover{
+
+    color:#e47312;
+}
+
+.header .nav .nav-item ul li .triangle{
+    position: absolute;
+    height:0px;
+    width:0px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid gray;
+    right:-16px;
+    top:5px;
+
+
+}
+
+.header .nav-item .nav-drop ul{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.header .nav-item .nav-drop ul li{
+    font-size: 12px;
+    margin:15px 30px;
+    color:black;
+    font-weight: 200;
+    
+}
+
+.header .nav-item .nav-drop{
+    display: none;
+    position: absolute;
+    
+    left:0px;
+    right:-120px;
+   
+    background-color: white;
+}
+
+
+ .page:hover  .nav-drop{
+   display:block;
+   flex-direction: column;
+ 
+}
+.nav-drop li:first-child{
+    padding-top: 35px ;
+}
+
+.nav-drop li::before{
+    display: none;
+}
+.nav-drop li::after{
+    display: none;
+}
+
+.nav  .quote .form{
+    
+   position: absolute;
+   top:90px;
+   background-color:white;
+   right: 0px;
+   left:-400px;
+   padding:0px 70px;
+   display:none;
+   flex-direction: column;
+  
+ 
+ 
+}
+.quote:hover .form{
+display:flex;
+}
+
+
+.quote .form span{
+     
+    font-size: 30px;
+    margin:60px 0px 30px 0px;
+    position: relative;
+    color:black;
+  
+}
+.quote .form span::before{
+    content:"quote";
+    position: absolute;
+    top:-80px;
+    font-size: 130px;
+   color:lightgray;
+    opacity: 0.15;
+   
+}
+
+.quote .form label { 
+    color:gray;
+
+    margin:25px 0px;
+}
+
+.quote .form input{
+    border:none;
+    border-bottom:1px solid gray; ;
+}
+.quote .form a{
+    margin: 50px 0px;
+    color:gray;
+    text-decoration: none;
+}
+.heading{
+    margin-top: 50px;
+    color: white;
+    margin-left: 60px;
+    width:56vw;
+}
+.heading p{
+  font-size: 60px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.heading button{
+    padding: 15px;
+    background-color: #e47312;
+    border: none;
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.heading span{
+    font-size: 20px;
+}
+
+.header{
+    
+    padding-top:5px;
+    height:555px;
+    position: relative;
+    
+   
+    background-attachment: fixed;
+  
+
+}
+
+.header::before{
+     content:"";
+     height: 100%;
+     width: 100%;
+    position: absolute;
+     top:0px;
+    background-image: url(./image/slide-2.jpg);
+    
+    background-position:top -30px left -50px;
+   
+    z-index: -2;
+    opacity: .5;
+    background-attachment: fixed;
+    background-size:110%;
+   
+}
+
+.contact .left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact i{
+    font-size: 24px;
+    margin:8px 0px ;
+}
+.contact span{
+    margin:8px 0px;
+}
+.contact a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.contact div span:nth-child(3){
+    color:lightgray;
+}
+
+.contact div span:last-child{
+    color:lightgray;
+}
+
+.header .social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right:0px;
+    bottom:100px;
+    background-color: #0a1229;
+    
+    
+}
+.header .social i{
+    font-size: 41px;
+    padding:0px 0px;
+    cursor: pointer;
+    background-color: #0a1229;
+    margin: 5px 7px;
+    color: white;
+    font-size: 15px;
+    padding:15px;
+   
+}
+
+.contact{
+    display: flex;
+    color:white;
+    position: absolute;
+  
+    top:460px;
+    bottom:-110px;
+    right: 0px;
+    background-image: linear-gradient(to bottom,#e47312,salmon);
+    align-items: center;
+    justify-content: space-evenly;
+    width:930px;
+}
+.nav-right-m{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 1296px) and (min-width: 991px){
+
+   
+
+    .heading{
+        margin-top: 20px;
+        color: white;
+        margin-left: 60px;
+
+    }
+    .heading p{
+        font-size: 60px;
+        color: white;
+        margin-bottom: 20px;
+      }
+      
+      .heading button{
+          padding: 15px;
+          background-color: #e47312;
+          border: none;
+          display: block;
+          margin-top: 25px;
+          cursor: pointer;
+      }
+
+   
+}
+
+
+
+@media only screen and (max-width: 991px) 
+{   
+
+    body{
+    
+        padding:0px 0px;
+    }
+
+    .header{
+       
+        position: relative;
+        padding:0px;
+        
+    }
+
+
+    .heading p{
+        font-size: 50px;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+    .contact{
+        display: flex;
+        color:white;
+        position: absolute;
+         width: auto;
+        top:510px;
+        bottom:-160px;
+        right: 0px;
+        left:0px;
+        background-image: linear-gradient(to bottom,#e47312,salmon);
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+
+    .header::before{
+        content:"";
+        height: 100%;
+        width: 100%;
+       position: absolute;
+        top:0px;
+       background-image: url(./image/slide-2.jpg);
+       
+       background-position:top -40px center    ;
+      
+       z-index: -2;
+       opacity: .5;
+       background-attachment: fixed;
+       background-size:cover;
+      
+   }
+    
+   
+   .header .nav .nukk-logo{
+    background-color:#e47312 ;
+    height:60px;
+    width:160px;
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.header .nukk-logo img{
+    height:32%;
+    width:52%;
+
+}
+ .header .nav{
+    margin: 0px;
+ }
+ 
+ .nav .nav-item{
+    display: none;
+ }
+
+ .header .nav .quote{
+    display: none;
+ }
+
+ .header .nav .nav-right{
+   
+   height: 60px;
+   position: relative;
+
+}
+
+
+
+
+
+
+
+  
+
+.header .social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right:0px;
+    bottom:45px;
+    background-color:#0a1229;
+    
+}
+
+
+
+
+
+
+.nav-right-m{
+    display: block;
+    height: 50px;
+    width:50px;
+   
+  
+}
+
+.nav-right-m::after{
+
+    content: "";
+    position: absolute;
+    width:50px;
+    height: 2px;
+    background-color: black;
+    top:32px;
+    right:25px;
+}
+
+.nav-right-m::before{
+
+    content: "";
+    position: absolute;
+    width:50px;
+    height: 2px;
+    background-color: black;
+    top:18px;
+    right:25px;
+}
+
+.nav-right-m:hover:after
+{
+    
+        transform: rotate(-33deg) translateY(-8.5px);
+    
+}
+
+.nav-right-m:hover:before
+{
+    transform: rotate(33deg) translateY(8.5px);
+}
+.nav-right-m ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    top:60px;
+    left:0px;
+    right: 0px;
+    list-style-type: none;
+}
+
+
+.nav-right-m ul li{
+    padding:15px;
+    cursor: pointer;
+}
+
+.nav-right-m:hover ul{
+    display: block;
+}
+
+.nav-right-m ul li:first-child{
+    color:#e47312;
+    margin-top: 10px;
+
+}
+
+.nav-right-m ul li:last-child{
+background-color: #e47312;
+text-align: center;
+color:white;
+
+}
+
+}
+
+@media only screen and (max-width: 500px){
+    .contact{
+        display: none;
+    }
+    
+    .header .social{
+        bottom:0px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1500px){
+
+    .header .nav .nukk-logo{
+        background-color:#e47312 ;
+       
+    width: 235px;
+    height:165px;
+       
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .header .nav{
+        display:flex;
+        justify-content: space-between;
+        margin:30px 120px 0px 120px;
+       
+    }
+
+
+    .header .nav .nav-right{
+        display: flex;
+        justify-content: flex-end;
+        background-color: white;
+        height:130px;
+        flex:1;
+        align-items: center;
+    }
+
+    .header .nav .quote{
+        height:100%;
+        width:235px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #e47312;
+        font-size: 20px;
+        margin-left: 50px;
+        color:white;
+        cursor: pointer;
+        z-index: 2;
+        position: relative;
+    }
+
+
+    .header .nav .nav-item ul li{
+        font-size: 20px;
+        margin:0px 18px;
+        position: relative;
+        cursor: pointer;
+    
+    }
+
+    .header .nav .nav-item ul li::before{
+        content:"";
+        height:0px;
+        width:0px;
+        background-color: #e47312;
+        position: absolute;
+        top:-54px;
+        left:50%;
+         transition: .25s;
+    
+    }
+
+    .header .nav .nav-item ul li::after{
+        content:"";
+        height:0px;
+        width:0px;
+        background-color: #e47312;
+        position: absolute;
+        bottom:-54px;
+        left:50%;
+         transition: .25s;
+    
+    }
+
+    .header .nav-item .nav-drop ul{
+    display:flex;
+    flex-direction: column;
+
+}
+
+.header .nav-item .nav-drop ul li{
+    font-size: 20px;
+    margin:22px 30px;
+    color:black
+}
+
+.header .nav-item .nav-drop{
+    display: none;
+    position: absolute;
+    
+    left:0px;
+    right:-160px;
+   
+    background-color: white;
+}
+
+
+ .page:hover  .nav-drop{
+   display:block;
+   flex-direction: column;
+ 
+}
+.nav-drop li:first-child{
+    padding-top: 60px ;
+}
+
+.heading{
+    margin-top: 70px;
+    color: white;
+    margin-left: 60px;
+    width:58vw;
+}
+
+
+.heading p{
+    font-size: 90px;
+    color: white;
+    margin-bottom: 25px;
+    margin-left: 50px;
+  }
+  
+  .heading button{
+      padding: 25px;
+      background-color: #e47312;
+      border: none;
+      display: block;
+      margin-top: 50px;
+      cursor: pointer;
+      font-size: 18px;
+      margin-left: 50px;
+  }
+  .heading span{
+    font-size: 30px;
+    margin-left: 50px;
+    z-index: 2;
+}
+ 
+
+.header{
+    
+    padding-top:5px;
+    height:805px;
+    position: relative;
+    
+     
+    background-attachment: fixed;
+  
+
+}
+
+.contact{
+    display: flex;
+    color:white;
+    position: absolute;
+  
+    top:620px;
+    bottom:-120px;
+    right: 0px;
+    background-image: linear-gradient(to bottom,#e47312,salmon);
+    align-items: center;
+    justify-content: space-evenly;
+    width:1380px;
+    z-index: -1;
+    font-size: 22px;
+}
+
+.contact i{
+    font-size: 34px;
+    margin:8px 0px ;
+}
+
+.header .social{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right:0px;
+    bottom:190px;
+    background-color: #0a1229;
+    
+    
+}
+.header .social i{
+    font-size: 41px;
+    padding:0px 0px;
+    cursor: pointer;
+    background-color: #0a1229;
+    
+    color: white;
+    font-size: 25px;
+    padding:23px;
+   
+}
+
+
+.nav  .quote .form{
+    
+    position: absolute;
+    top:90px;
+    background-color:white;
+    right: 0px;
+    left:-400px;
+    padding:0px 70px;
+    display:none;
+    flex-direction: column;
+   
+  
+  
+ }
+ .quote:hover .form{
+ display:flex;
+ }
+ 
+ 
+ .quote .form span{
+      
+     font-size: 40px;
+     margin:90px 0px 60px 0px;
+     position: relative;
+     color:black;
+   
+ }
+ .quote .form span::before{
+     content:"quote";
+     position: absolute;
+     top:-80px;
+     font-size: 160px;
+    color:lightgray;
+     opacity: 0.15;
+    
+ }
+ 
+ .quote .form label { 
+     color:gray;
+     font-size: 23px;
+     margin:30px 0px;
+ }
+ 
+ .quote .form input{
+     border:none;
+     border-bottom:1px solid gray; 
+     margin:20px 0px;
+ }
+ .quote .form a{
+     margin: 50px 0px;
+     color:gray;
+     font-size: 23px;
+     text-decoration: none;
+ }
+
+ .nav  .quote .form{
+    
+    position: absolute;
+    top:130px;
+    background-color:white;
+    right: 0px;
+    left:-400px;
+    padding:0px 90px;
+    
+    flex-direction: column;
+   
+  
+  
+ }
+
+ 
+}

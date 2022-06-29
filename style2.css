@@ -1,0 +1,378 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+.sec4c{
+    
+    width:1200px;
+    
+   
+    padding:20px 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.sec4{
+    display: flex;
+    justify-content: center;
+    color:gray;
+    padding: 80px 0px 60px 0px;
+    background-color: #f7f8fc;
+}
+
+.sec4c p:first-child{
+    font-size: 40px;
+    color:black;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.sec4 span:hover{
+   
+    border-bottom: 2px solid #e47312;
+    cursor: pointer;
+    
+}
+
+
+.sec4c p:first-child::before{
+    content:"PROJECTS";
+    position:absolute;
+    font-size: 100px;
+    left: -30px;
+    top: -50px;
+    color:gray;
+    opacity: 0.08;
+}
+
+.sec5{
+    padding: 20px 20px 5px 20px;
+    background-color: #f7f8fc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+    
+}
+
+.sec5i img{
+    width:100%;
+}
+.sec5i{
+    width:32.5%;
+    margin-bottom: 15px;
+    position: relative;
+}
+.sec5i .viewp{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:0px;
+    left: 0px;
+    display: none;
+}
+
+.sec5i .view{
+   
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to top right,salmon,#e47312);
+    color:white;
+    font-weight: 400;
+    border-radius: 50%;
+   
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+   
+
+}
+
+
+
+
+
+
+.sec5i:hover .viewp{
+    display: flex;
+    
+    
+}
+.sec6{
+    padding: 120px 20px;
+    background-image: linear-gradient(to right,#e47312,salmon);
+    color: white;
+    position: relative;
+  
+}
+.sec6c{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec6 p:nth-child(1){
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.sec6 p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.sec6 p:nth-child(3){
+    font-size: 18px;
+    padding-bottom: 5px;
+
+}
+
+.sec6 p:nth-child(3):hover{
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}
+.sec6::before{
+    content: "";
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(./image/banner-2.jpg);
+    background-attachment: fixed;
+    opacity: 0.1;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+
+    .sec4c p:first-child{
+        font-size: 33px;
+        color:black;
+        position: relative;
+    }
+
+    .sec4c p:first-child::before{
+        content:"PROJECTS";
+        position:absolute;
+        font-size: 80px;
+        left: -30px;
+        top: -40px;
+        color:gray;
+        opacity: 0.08;
+    }
+
+    .sec6 p:nth-child(1){
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+
+    .sec6{
+        padding: 100px 20px;
+        background-image: linear-gradient(to right,#e47312,salmon);
+        color: white;
+        position: relative;
+      
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 550px){
+
+    .sec4c p:first-child::before{
+        display: none;
+        
+    }
+
+    .sec4c{
+        flex-direction: column;
+        
+    }
+    .sec4{
+        padding-bottom: 80px;
+    }
+
+    .sec6c{
+        align-items: flex-start;
+    }
+
+    
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 760px){
+
+
+    .sec4c{width:1200px;
+       
+        padding:20 30px 20px 30px;
+       
+        
+    }
+
+
+
+    .sec5{
+        padding: 20px 30px 5px 30px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between
+        
+    }
+
+
+
+.sec5i{
+    width:100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+.sec6 p:nth-child(1){
+    font-size:25px;
+    margin-bottom: 20px;
+}
+
+
+.sec6{
+    padding: 50px 20px;
+    background-image: linear-gradient(to right,#e47312,salmon);
+    color: white;
+    position: relative;
+  
+}
+}
+
+@media only screen and (min-width: 1500px){
+
+
+.sec4c{
+    
+    width:100%;
+    font-size: 22px;
+   
+    padding:20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.sec4{
+    display: flex;
+    justify-content: center;
+    color:gray;
+    padding: 100px 0px 100px 0px;
+    background-color: #f7f8fc;
+}
+
+.sec4c p:first-child{
+    font-size: 60px;
+    color:black;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.sec4 span:hover{
+   
+    border-bottom: 2px solid #e47312;
+    cursor: pointer;
+    
+}
+
+
+.sec4c p:first-child::before{
+    content:"PROJECTS";
+    position:absolute;
+    font-size: 130px;
+    left: -30px;
+    top: -50px;
+    color:gray;
+    opacity: 0.08;
+}
+}
+
+@media only screen and (min-width: 1500px){
+
+    .sec6{
+       
+        padding: 120px 20px;
+        background-image: linear-gradient(to right,#e47312,salmon);
+        color: white;
+        position: relative;
+      
+    }
+    .sec6c{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec6 p:nth-child(1){
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    
+    .sec6 p:nth-child(2){
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+    
+    .sec6 p:nth-child(3){
+        font-size: 26px;
+        padding-bottom: 5px;
+    
+    }
+    
+    .sec6 p:nth-child(3):hover{
+        border-bottom: 2px solid white;
+        cursor: pointer;
+    }
+    .sec6::before{
+        content: "";
+        position: absolute;
+        top:0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url(./image/banner-2.jpg);
+        opacity: 0.1;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    
+    
+
+
+    
+}
